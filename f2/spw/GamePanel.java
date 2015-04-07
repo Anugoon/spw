@@ -31,6 +31,15 @@ public class GamePanel extends JPanel {
 		
 		repaint();
 	}
+	public void HPgent(int a,int b){
+			big.setColor(Color.WHITE);	
+			big.fillRect ( 7, 30, 370, 20 );
+			big.setColor ( Color.BLACK);
+			big.fillRect ( 10, 35, 363, 10 );		
+			big.setColor ( Color.GREEN );
+			big.fillRect (a,35,b,10 );
+
+		}
 
 	@Override
 	public void paint(Graphics g) {
