@@ -31,7 +31,7 @@ public class GamePanel extends JPanel {
 		
 		repaint();
 	}
-	public void HPgent(int a,int b){
+	public void HPbar(int a,int b){
 			big.setColor(Color.WHITE);	
 			big.fillRect ( 7, 30, 370, 20 );
 			big.setColor ( Color.BLACK);
