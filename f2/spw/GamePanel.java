@@ -29,21 +29,17 @@ public class GamePanel extends JPanel {
 		big.drawImage(imgBackground, 0, 0, 400, 600,null);
 		big.setColor(Color.WHITE);		
 		big.drawString(String.format("%08d", reporter.getScore()), 300, 20);
+		big.drawString(String.format("Life: %d", reporter.getLife()), 310, 40);
+        big.drawString(String.format("HP "), 290, 60);
+        big.setColor(Color.YELLOW);
+		big.drawRect(315, 50, (int) (100 * 0.8), 8);
+		big.fillRect(315, 50, (int) (reporter.getHP() * 0.8), 8);
 		for(Sprite s : sprites){
 			s.draw(big);
 		}
 		
 		repaint();
 	}
-	public void HPbar(int a,int b){
-			big.setColor(Color.WHITE);	
-			big.fillRect ( 7, 30, 370, 20 );
-			big.setColor ( Color.BLACK);
-			big.fillRect ( 10, 35, 363, 10 );		
-			big.setColor ( Color.GREEN );
-			big.fillRect (a,35,b,10 );
-
-		}
 
 	@Override
 	public void paint(Graphics g) {
