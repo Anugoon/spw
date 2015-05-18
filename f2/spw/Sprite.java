@@ -1,4 +1,4 @@
-package f2.spw;
+package f2;
 
 import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;

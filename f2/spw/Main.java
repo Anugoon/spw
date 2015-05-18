@@ -1,5 +1,14 @@
-package f2.spw;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package f2;
 
+/**
+ *
+ * @author Anugoon
+ */
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
@@ -11,7 +20,7 @@ public class Main {
 		frame.setSize(400, 650);
 		frame.getContentPane().setLayout(new BorderLayout());
 		
-		SpaceShip v = new SpaceShip(180, 550, 20, 20);
+		SpaceShip v = new SpaceShip(180, 550, 50, 50);
 		GamePanel gp = new GamePanel();
 		GameEngine engine = new GameEngine(gp, v);
 		frame.addKeyListener(engine);
